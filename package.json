@@ -1,0 +1,39 @@
+{
+  "name": "still-and-story",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "check": "astro check && tsc --noEmit -p tsconfig.server.json",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "latest",
+    "@tailwindcss/vite": "latest",
+    "astro": "latest",
+    "firebase": "latest",
+    "firebase-admin": "latest",
+    "lucide-react": "latest",
+    "motion": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@astrojs/check": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "prettier": "^3.9.10",
+    "typescript": "latest"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.6"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
